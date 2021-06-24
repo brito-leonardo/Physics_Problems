@@ -105,8 +105,57 @@ u0(1)=0.0d0
 u0(Nx+1)=0.0d0
 
 end subroutine initial
-!************************************
+!*****************************************************************
 ! Crank Nicolson routine
+!
+! Suppose the matrix equation:
+!     (left side)      A*x=d  (right side)
+!
+! where A is a tridiagonal matrix (blanck spaces are zero elements):
+!
+!
+!          (b(2) c(2)                             )
+!          (a(2) b(3) c(3)                        )
+!          (    a(3)  b(4) c(4)                   )
+!          (          a(4) b(5) c(5)              )
+!    A =   (                                      )
+!          (                                      )
+!          (               a(Nx-1) b(Nx-1) c(Nx-1))
+!          (                        a(Nx)   b(Nx) )
+
+! The matrx A can be written as A=L*U
+! where L and U are matrix too, 'lower' and 'upper' diagonals
+! then we can write A*x=d as L*U*x=d , with
+!
+!          (1                                 )
+!          (l(2) 1                            )
+!          (    l(3)  1                       )
+!          (         l(4) 1                   )
+!    L =   (                                  )
+!          (                                  )
+!          (               l(Nx-1)   1        )
+!          (                        l(Nx)   1 )
+!
+!
+!          (w(2) v(2)                             )
+!          (     w(3) v(3)                        )
+!          (          w(4) v(4)                   )
+!          (               w(5) v(5)              )
+!    U =   (                                      )
+!          (                                      )
+!          (                      w(Nx-1)  v(Nx-1))
+!          (                                 w(Nx))
+!
+!    define z=U*x, we get L*z=d, we solve it by  forward substitution
+!    and later the U*x=z by backrward substitution, returning x.
+!
+!    We have to solve the problem:
+!
+!                         (left side) =(right side)
+!                               A *x  =  d
+!
+!  u(i)-0.5*rx*(u(i+1)-2*u(i)+u(i-1))=ui+0.5*rx*(u(i+1)-2*u(i)+u(i-1))
+!           (new solution)                    (old solution)
 !
 subroutine CNx(u,dt0)
 use variables, only:Nx,dx,sig
