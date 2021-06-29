@@ -64,7 +64,6 @@ do i=1,N
    write(*,*)x(i)
 end do
 
-pause
 
 end program LU_ex
 !*****************************************
