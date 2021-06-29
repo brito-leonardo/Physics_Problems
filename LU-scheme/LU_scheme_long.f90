@@ -118,7 +118,6 @@ do i=1,N
 end do
 
 
-pause
 
 end program LU_ex
 !*****************************************
