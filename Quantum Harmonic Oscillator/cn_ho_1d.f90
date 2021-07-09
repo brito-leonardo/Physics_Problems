@@ -18,8 +18,8 @@
 !
 !     energy:        E=0.5
 !
-!
-!           2) An Introduction to the Numerical
+! reference:
+!           1) An Introduction to the Numerical
 !              Solution of Differential Equation
 !             (Revised edition)-Douglas Quinney (1987)
 !
