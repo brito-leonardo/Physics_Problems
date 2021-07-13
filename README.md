@@ -10,7 +10,7 @@ Here are presented some useful codes to solve Bose-Einstein condensates problems
       <th>Folder</th>
       <th>Content</th>
       <th>Method</th>
-      <th>Code Language</th>
+      <th>Programming Language</th>
     </tr>
   </thead>
   <tbody>
