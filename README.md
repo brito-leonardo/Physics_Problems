@@ -30,7 +30,7 @@ Here are presented some useful codes to solve Bose-Einstein condensates problems
       <td>Quantum Harmonic Oscillator </td>
       <td>We find the ground-state and perform the dynamics of the Quantum Harmonic Oscilaltor</td>
       <td>Crank-Nicolson scheme, Split-Step method, Relaxation method, LU method and Simpson integration</td>
-      <td>fortran 90</td>
+      <td>Fortran 90</td>
     </tr> 
     <tr>     
   </tbody>
