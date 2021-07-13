@@ -9,20 +9,28 @@ Here are presented some useful codes to solve Bose-Einstein condensates problems
     <tr>
       <th>Folder</th>
       <th>Content</th>
+      <th>Method</th>
+      <th>Code Language</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>Gross-Pitaevskii_Equation </td>
-      <td>Bisection method to find a root of a function within an interval</td>
+      <td>Gross-Pitaevskii Equation </td>
+      <td>We find the ground-state and perform the dynamics of a Bose-Eintein condensate in the mean-field approximation using the Gross-Pitaevskii (GP) equation  </td>
+      <td>Crank-Nicolson scheme based, Split-Step method, Relaxation method, LU method and Simpson integration</td>
+      <td>Fortran 90</td>
     </tr>
     <tr>
-      <td>Heat_Equation</td>
-      <td>Conjugate gradient (CG) method to solve a linear matrix system</td>
+      <td>Heat Equation</td>
+      <td>We find the solution of the Heat Equation at a given time</td>
+      <td>Crank-Nicolson scheme and LU method</td>
+      <td>Fortran 90 and Python 3</td>
     </tr>
     <tr>
-      <td>LU_scheme </td>
-      <td>Lower-Upper (LU) scheme to solve a linear matrix system, where the matrix is tridiagonal</td>
+      <td>Quantum Harmonic Oscillator </td>
+      <td>We find the ground-state and perform the dynamics of the Quantum Harmonic Oscilaltor</td>
+      <td>Crank-Nicolson scheme, Split-Step method, Relaxation method, LU method and Simpson integration</td>
+      <td>fortran 90</td>
     </tr> 
     <tr>     
   </tbody>
