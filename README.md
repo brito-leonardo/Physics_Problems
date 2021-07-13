@@ -32,7 +32,6 @@ Here are presented some useful codes to solve Bose-Einstein condensates problems
       <td>Crank-Nicolson scheme, Split-Step method, Relaxation method, LU method and Simpson integration</td>
       <td>Fortran 90</td>
     </tr> 
-    <tr>     
   </tbody>
 
 </table>
