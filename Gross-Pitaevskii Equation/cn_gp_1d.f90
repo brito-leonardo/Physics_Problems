@@ -125,7 +125,7 @@ do k=1,Nt
       call norm(psi,norma)
       psi=psi/dsqrt(norma)
    end do
-  !energy convergence criterium to finish the loop
+  !energy convergence criterion to finish the loop
    call energy(psi,E,mu,res,vir)
    error=dabs(E-Eold)
    Eold=E
