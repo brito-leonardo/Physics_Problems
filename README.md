@@ -1,6 +1,6 @@
-# Bose-Einstein Condensates
+# Physics Problems
 
-Here are presented some useful codes to solve Bose-Einstein condensates problems and related algebraic problems in quantum mechanics, with Fortran 90 and Python 3 languages.
+Here are presented some useful codes to solve Physics problems from classical and quantum mechanics, with Fortran 90 and Python 3 languages.
 
 ## Table of Contents
 
